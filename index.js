@@ -42,7 +42,6 @@ app.get('/usuarios/:id', async(req, res)=>{
     }
 })
 app.post('/usuarios', async(req, res)=>{
-    // console.log(req.body, 'body')
     try {
         let {nombre, apellido} = req.body
         let usuario = {id:uuidv4().slice(30), nombre, apellido}
